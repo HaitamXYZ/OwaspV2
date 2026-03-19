@@ -1,0 +1,18 @@
+{
+    "name": "owasp-asvs-server",
+    "version": "1.0.0",
+    "description": "OWASP ASVS Security Self-Assessment Backend",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node server.js"
+    },
+    "dependencies": {
+        "@google/generative-ai": "^0.21.0",
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "openai": "^6.32.0",
+        "pdfkit": "^0.13.0",
+        "xlsx": "^0.18.5"
+    }
+}
