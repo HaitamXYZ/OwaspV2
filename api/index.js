@@ -11,12 +11,12 @@ const app = express();
 app.use(cors());
 app.use(express.json({ limit: '10mb' }));
 
-app.use('/checklist', checklistRoutes);
-app.use('/compliance', complianceRoutes);
-app.use('/ai', aiRoutes);
-app.use('/assessment', assessmentRoutes);
+app.use('/api/checklist', checklistRoutes);
+app.use('/api/compliance', complianceRoutes);
+app.use('/api/ai', aiRoutes);
+app.use('/api/assessment', assessmentRoutes);
 
-app.get('/health', (req, res) => {
+app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
